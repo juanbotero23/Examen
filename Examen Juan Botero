@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+   char nombre;
+   float promedio, n1, n2, n3, n4, n5;
+   
+   
+   printf("ingrese el nombre: ");
+   scanf("%s",&nombre);
+   
+   printf("\ningrese la primera nota: ");
+   scanf("%f",&n1);
+   printf("\ningrese la segunda nota: ");
+   scanf("%f",&n2);
+   printf("\ningrese la tercera nota: ");
+   scanf("%f",&n3);
+   printf("\ningrese la cuarta nota: ");
+   scanf("%f",&n4);
+   printf("\ningrese la quinta nota: ");
+   scanf("%f",&n5);
+   
+   promedio= (n1+n2+n3+n4+n5)/5;
+   printf("\nel promedio del estudiante es %.2f",promedio);
+   
+   if(promedio>18&&promedio<21){
+    printf("\nAprobado y sobresaliente");
+   }
+   
+   else if(promedio>15&&promedio<18){
+    printf("\nAprobado y muy bueno");
+   }
+   
+   else if(promedio>12&&promedio<15){
+    printf("\nAprobado y bueno");
+   }
+   
+   else if(promedio>9&&promedio<12){
+    printf("\nAprobado y regular");
+   }
+   
+   else if(promedio<10){
+    printf("\nReprobado y mejorable");
+   }
+
+    return 0;
+}
